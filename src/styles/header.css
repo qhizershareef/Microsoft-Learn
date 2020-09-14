@@ -1,0 +1,82 @@
+.Header_Container{
+    display: flex;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.Header_Contents{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.Header_Contents > .Logo{
+    display: flex;
+    flex-basis: 15%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-self: center;
+    cursor: pointer;
+}
+.Header_Contents> .Nav_Links{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+}
+.Nav_Links > .link{
+    margin-left: 40px;
+    font-weight: bold;
+    font-family: Century Gothic;
+    cursor: pointer;
+    background-color: orangered;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.Logo > img{
+    width:135px;
+    height:55px
+}
+.link:hover{
+    color: black;
+    transition: 0.2s;
+}
+.Collapse{
+    margin-top: 10px;
+    display: none;
+}
+
+.Collapse_View{
+    display: none;
+    text-align: center;
+}
+.Collapse_View >.List >li{
+    background-color: black;
+    padding:10px;
+    color:white;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    margin-top:2px;
+}
+.Hide_View{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    .Header_Contents > .Nav_Links{
+        display: none;
+    }
+    .Collapse{
+        display: block;
+    }
+    .Collapse_View{
+        display: block;
+        text-align: center;
+    }
+    .Hide_View{
+        display: none !important;
+    }
+}

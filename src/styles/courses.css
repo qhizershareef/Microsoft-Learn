@@ -1,0 +1,108 @@
+.Course_Container{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.Title_Learn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.Title_Learn > p{
+    margin:20px;
+    font-size: 25px;
+    font-family: Century Gothic;
+    text-align: center;
+}
+.Featured_Title{
+    margin-top:5%;
+}
+.Featured_Title > h1{
+    font-size:32px;
+    font-weight: 500;
+    text-align: left;
+}
+.Featured_Title > hr{
+    background-color: lightgray;
+    background: rgba(0,0,0,0.2);
+    margin: 20px 0 20px 0;
+}
+.Featured_Courses > .Course > img{
+    width:655px;
+    height:300px;
+    max-height:auto;
+    max-width: 100%;
+}
+.Featured > .Featured_Courses{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.Course_Desc > h3{
+    font-family: Century Gothic;
+    font-size: large;
+    margin:20px 0 10px 0;
+}
+.Course_Desc>p{
+    font-weight: bold;
+}
+.Course_Desc > .LearnMore{
+    color:rgb(18, 104, 189);
+    margin-top:5px;
+    cursor: pointer;
+}
+.Course_Desc > p >span{
+    padding-right: 5px;
+    padding-left: 5px;
+    color:white;
+    background-color: rgb(18, 104, 189);
+}
+
+.Courses_Section {
+    margin-top:5%;
+}
+.Courses_Section > .Title > h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+.Courses_Section > .Title > hr{
+    background-color: lightgray;
+    background: rgba(0,0,0,0.2);
+    margin: 10px 0 70px 0;
+}
+.Courses_Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Courses_Container > .Course_View{
+    margin-bottom:80px;
+}
+.Courses_Container > .Course_View >img{
+    max-width: 100%;
+    width:420px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(181, 178, 178);
+}
+
+@media only screen and (max-width:800px){
+    .Courses_Container > .Course_View >img{
+        height: auto !important;
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .Featured_Courses > .Course > img{
+        width:100%;
+        height:auto;
+        max-width: 100%;
+    }
+}
